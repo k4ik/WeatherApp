@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 body {
@@ -30,6 +34,7 @@ h1 {
     font-size: 22px;
     text-align: center;
     padding: 10px 0;
+    font-weight: 500;
 }
 
 form {
@@ -44,13 +49,17 @@ input {
     margin-top: 20px;
 }
 
-.locationName, .temp {
+.locationName, .temp, .image, .text {
     display: flex;
     align-items: center;
     gap: 5px;
     padding: 5px 0;
     color: #fff;
     display: none;
+}
+
+.text {
+    margin-bottom: 20px;
 }
 
 .locationName img, .temp img {
