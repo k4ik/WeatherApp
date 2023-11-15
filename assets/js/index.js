@@ -4,6 +4,14 @@ async function fetchWeatherData(locationParam) {
 
         let locationName = document.querySelector(".locationName");
         let temp = document.querySelector(".temp");
+        let image = document.querySelector(".image");
+        let text = document.querySelector(".text");
+
+        image.innerHTML = 
+        `<img src="${weatherData.current.condition.icon}" alt="">`;
+
+        text.innerHTML = 
+        `<p>${weatherData.current.condition.text}</p>`;
 
         locationName.innerHTML = 
         `<img src="assets/images/map-pin.svg" alt="">
@@ -15,6 +23,8 @@ async function fetchWeatherData(locationParam) {
 
         console.log(weatherData);
 
+        image.style.display = "flex";
+        text.style.display = "flex";
         locationName.style.display = "flex";
         temp.style.display = "flex";
 
