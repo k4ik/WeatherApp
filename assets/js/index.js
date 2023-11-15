@@ -2,6 +2,9 @@ async function fetchWeatherData(locationParam) {
     try {
         const weatherData = await (await fetch(`https://api.weatherapi.com/v1/current.json?key=84dbd0102e614019a21133107231511&q=${locationParam}&aqi=no`)).json();
 
+        
+
+
         let locationName = document.querySelector(".locationName");
         let temp = document.querySelector(".temp");
         let image = document.querySelector(".image");
