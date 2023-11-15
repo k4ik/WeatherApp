@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
-    <form id="weatherForm">
-        <input type="text" name="locationInput" id="locationInput" placeholder="Brazil">
-    </form>
-
-    <p class="locationName"></p>
-    <p class="temp"></p>
+    <h1>Weather App</h1>
+    <div class="container">
+        <form id="weatherForm">
+            <input type="text" name="locationInput" id="locationInput">
+            <button>
+                <img src="assets/images/search.svg" alt="search icon" class="submit-btn">
+            </button>
+        </form>
+        <div class="locationName"></div>
+        <div class="temp"></div>
+    </div>
 
     <script src="assets/js/index.js"></script>
 </body>
