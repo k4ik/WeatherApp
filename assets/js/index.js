@@ -25,8 +25,12 @@ async function fetchWeatherData(locationParam) {
         console.log(weatherData);
         return weatherData;
     } catch(e) {
-        console.log(e);
-        alert("location not found");
+        console.error(e);
+        if (e instanceof TypeError && e.message.includes("JSON")) {
+            alert("Error parsing weather data. Please try again later.");
+        } else {
+            alert("Location not found. Please enter a valid location.");
+        }
     }
 }
 
