@@ -9,25 +9,20 @@ async function fetchWeatherData(locationParam) {
 
         image.innerHTML = 
         `<img src="${weatherData.current.condition.icon}" alt="">`;
-
         text.innerHTML = 
         `<p>${weatherData.current.condition.text}</p>`;
-
         locationName.innerHTML = 
         `<img src="assets/images/map-pin.svg" alt="">
         <span>${weatherData.location.name}</span>`;
-
         temp.innerHTML = 
         `<img src="assets/images/thermometer.svg" alt="">
         <span>${weatherData.current.temp_c}°C</span>`;
-
-        console.log(weatherData);
-
         image.style.display = "flex";
         text.style.display = "flex";
         locationName.style.display = "flex";
         temp.style.display = "flex";
-
+        
+        console.log(weatherData);
         return weatherData;
     } catch(e) {
         console.log(e);
