@@ -50,12 +50,17 @@ input, button {
 }
 
 input::placeholder {
-    font-size: 20px;
+    font-size: 16;
 }
 
 button {
     background-color: rgb(115, 115, 184);
-    padding: 10px;
+    padding: 5px 10px;
+}
+
+button img {
+    width: 20px;
+    height: auto;
 }
 
 .locationName {
