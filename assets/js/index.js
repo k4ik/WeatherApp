@@ -11,7 +11,7 @@ async function fetchWeatherData(locationParam) {
         let text = document.querySelector(".text");
 
         image.innerHTML = 
-        `<img src="${weatherData.current.condition.icon}" alt="">`;
+        `<img src="${weatherData.current.condition.icon}" alt="" width="80px" height="80px">`;
         text.innerHTML = 
         `<p>${weatherData.current.condition.text}</p>`;
         locationName.innerHTML = 
