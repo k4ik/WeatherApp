@@ -31,7 +31,7 @@ body {
 
 h1 {
     color: #fff;
-    font-size: 22px;
+    font-size: 32px;
     text-align: center;
     padding: 10px 0;
     font-weight: 500;
@@ -42,7 +42,20 @@ form {
 }
 
 input {
-    padding: 0 5px;
+    padding: 0 10px;
+}
+
+input, button {
+    border: none;
+}
+
+input::placeholder {
+    font-size: 20px;
+}
+
+button {
+    background-color: rgb(115, 115, 184);
+    padding: 10px;
 }
 
 .locationName {
