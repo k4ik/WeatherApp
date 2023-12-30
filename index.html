@@ -1,27 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="assets/styles/style.css">
-</head>
-<body>
-    <h1>Weather App</h1>
-    <div class="container">
-        <div class="image"></div>
-        <div class="text"></div>
-        <form id="weatherForm">
-            <input type="text" name="locationInput" id="locationInput" placeholder="Enter a location">
-            <button>
-                <img src="assets/images/search.svg" alt="search icon" class="submit-btn">
-            </button>
-        </form>
-        <div class="locationName"></div>
-        <div class="temp"></div>
-    </div>
-
-    <script src="assets/js/index.js"></script>
-</body>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
