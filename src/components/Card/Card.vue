@@ -56,7 +56,7 @@
             },
             async getData() {
                 try {
-                    const req = await fetch(`http://api.weatherapi.com/v1/current.json?key=84dbd0102e614019a21133107231511&q=${this.locate}&aqi=no`);
+                    const req = await fetch(`https://api.weatherapi.com/v1/current.json?key=84dbd0102e614019a21133107231511&q=${this.locate}&aqi=no`);
                     const data = await req.json();
 
                     this.src=data.current.condition.icon;
