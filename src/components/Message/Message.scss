@@ -1,0 +1,14 @@
+@import "../../assets/scss/variables";
+
+div {
+    margin-top: 30px;
+    max-width: 300px;
+    background-color: $bg-message;
+    padding: 5px 10px;
+    border: 1px solid $border-box;
+
+    p {
+        font-size: 12px;
+        text-align: center;
+    }
+}
